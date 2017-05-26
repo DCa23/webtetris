@@ -1,0 +1,27 @@
+<html>
+<head>
+	<title>Tetris</title>
+	<script src="tetrimino.js"></script>
+	<script src="tscreen.js"></script>
+	<script src="logic.js"></script>	
+	<meta charset="utf-8" />
+</head>
+<body>
+
+	<div id="fade" style="position:absolute;width:99%;height:98%;background-color:black;opacity:0.8;z-index:100;" >
+		<h1 style="color:yellow;text-align:center;">Pulsa enter para empezar el juego</h1>
+	</div>
+
+	<div style="position:fixed;margin-top:5px;margin-left:5px;">Score: <span id="score" style="border: 1px solid; font-size: 1.1em; width: 120px; text-align: right; padding: 3px; background: none;" >0</span></div>
+
+
+	<div id="hold" style="position:relative;margin-left:30%;width:70px;height:50px;border:1px solid;float:left;text-align:center;" >Hold
+		<div id="holdimg"></div>
+	</div>
+	<div id="divplayscreen" style="position:relative;margin-left:40%;width:300px;height:600px;border:1px solid;"></div>
+
+	<audio id="audio">
+  		<source src="Tetris.mp3" type="audio/mp3">
+  	</audio>
+</body>
+</html>
